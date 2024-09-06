@@ -42,7 +42,7 @@ header nav a {
     color: aliceblue;
     text-decoration: none;
     font-size: 20px;
-    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 header nav a:hover {
@@ -176,6 +176,7 @@ aside {
     bottom: 11px;
     z-index: 10;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 aside div div {
@@ -195,6 +196,8 @@ aside img {
     background-color: rgba(240, 248, 255, 0.615);
     outline: none;
 }
+
+
 
 /* Aside */
 

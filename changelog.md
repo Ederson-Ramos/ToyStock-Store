@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2024-08-01
 ### Changed
 
+- Adjusted layout in `style.css` for better design.
+
+### Changed
+
 - Adjusted layout in `style.css` for better mobile responsiveness.
 
 ### Added
