@@ -4,55 +4,6 @@
     margin: 0;
 }
 
-/* Força o tema claro */
-:root {
-    color-scheme: light;
-}
-
-/* Garantir que o dark mode não seja ativado */
-@media (prefers-color-scheme: dark) {
-    h2, h3 {
-        color: rgb(51, 19, 19);
-    }
-
-    span {
-        color: rgb(4, 94, 4);
-    }
-
-    button {
-        background-color: rgb(51, 19, 19);
-        color: aliceblue;
-    }
-
-    button:hover {
-        background-color: rgb(74, 63, 63);
-    }
-
-    footer {
-        color: aliceblue;
-        background-color: rgb(51, 19, 19);
-    }
-
-    header {
-        color: aliceblue;
-        background-color: rgb(51, 19, 19);
-    }
-
-    header nav a {
-        color: aliceblue;
-    }
-
-    aside div div {
-        background-color: rgb(61, 33, 33);
-        color: aliceblue;
-    }
-
-    aside img {
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.536);
-        background-color: rgba(240, 248, 255, 0.615);
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -91,6 +42,11 @@ header nav a {
     color: aliceblue;
     text-decoration: none;
     font-size: 20px;
+    outline: none;
+}
+
+header nav a:hover {
+    color: rgb(215, 215, 215);
 }
 
 #separador {
@@ -132,7 +88,6 @@ header nav a {
 
 .loja .container div h3 {
     color: rgb(51, 19, 19);
-    margin-bottom: 3px;
 }
 
 .loja .container div p {
@@ -187,6 +142,7 @@ span {
     color: rgb(4, 94, 4);
     font-weight: bold;
     padding-top: 8px;
+    cursor: default;
 }
 
 .produtos .container .todos-produtos div button {
@@ -237,6 +193,7 @@ aside img {
     border-radius: 50%;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.536);
     background-color: rgba(240, 248, 255, 0.615);
+    outline: none;
 }
 
 /* Aside */
@@ -250,6 +207,7 @@ footer {
     color: aliceblue;
     text-align: center;
     margin-top: 30px;
+    cursor: default;
 }
 
 /* Footer */
@@ -304,17 +262,28 @@ footer {
         gap: 18px;
     }
 
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     header .container h1 {
-        margin-right: 30px;
-        font-size: 28px;
+        font-size: 25px;
+    }
+
+    header .container nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 5px;
     }
 
     header .container nav a {
         display: flex;
+        font-size: 15px;
     }
 
     #separador {
-        margin-bottom: 5px;
+        margin-right: 10px;
     }
 
     aside img {
